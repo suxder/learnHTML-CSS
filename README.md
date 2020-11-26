@@ -125,5 +125,97 @@ CSS中display:block意思如下：
 
 #### 2.绝对路径
 
-如：<img src='https://www.taobao.com/img/1.jpg'/>表示绝对路径
+如：<img src='https://www.taobao.com/img'/>表示绝对路径
+
+### 四、列表标签
+
+#### 1.无序列表
+
+```html
+	<ul>
+        <li>百事可乐</li>
+        <li>可口可乐</li>
+        <li>炸鸡</li>
+        <li>汉堡</li>
+	</ul>
+```
+
+[![DBsECD.png](https://s3.ax1x.com/2020/11/26/DBsECD.png)](https://imgchr.com/i/DBsECD)
+
+#### 2.有序列表
+
+```html
+     <ol>
+        <li>百事可乐</li>
+        <li>可口可乐</li>
+        <li>炸鸡</li>
+        <li>汉堡</li>
+     </ol>
+```
+
+[![DBydQH.png](https://s3.ax1x.com/2020/11/26/DBydQH.png)](https://imgchr.com/i/DBydQH)
+
+#### 3.自定义列表
+
+```html
+  <dl>
+    <dt>芬达</dt>
+    <dd>百事可乐</dd>
+    <dd>可口可乐</dd>
+    <dd>康师傅绿茶</dd>
+    <dd>红茶</dd>
+    <dd>橘子</dd>
+    <dd>香蕉</dd>
+  </dl>
+```
+
+[![DBcV8U.png](https://s3.ax1x.com/2020/11/26/DBcV8U.png)](https://imgchr.com/i/DBcV8U)
+
+通过列表嵌套可以实现如图所示的结构：
+
+[![DBcUrd.png](https://s3.ax1x.com/2020/11/26/DBcUrd.png)](https://imgchr.com/i/DBcUrd)
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>千峰大食堂</h2>
+		<ul>
+			<li>卤肉菜
+				<ul>
+					<li>卤鸡肉</li>
+					<li>卤鸭肉</li>
+					<li>卤牛肉</li>
+				</ul>
+			</li>
+			<li>
+				盖浇饭
+				<ul>
+					<li>西红柿鸡蛋</li>
+					<li>小炒肉</li>
+					<li>鱼香肉丝</li>
+				</ul>
+			</li>
+			<li>炒菜
+				<ul>
+					<li>蒜薹炒肉</li>
+					<li>宫保鸡丁</li>
+					<li>烧茄子</li>
+				</ul>
+			</li>
+			<li>饮品
+				<ul>
+					<li>蜂蜜柚子茶</li>
+					<li>冰糖雪梨</li>
+					<li>可口可乐</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
+```
 
