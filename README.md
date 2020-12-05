@@ -74,12 +74,85 @@ CSS中display:block意思如下：
 
 - 如果bai用<div>+<a> 做一个du按钮，这个能理解吧，就zhi是 想通过dao link 来实现跳转，内但是看起来是容个按钮，且不需要触发事件。而且 css 也比 button 的好用。
 - 这中情况下，如果不是“块”block，那么只要点到文字上时才会触发，点到 按钮<div>但是没点到字是不行的，但是用了 block 后，整个按钮都可以承载 a 的link操作了
-
 - css中的display是设置元素显示的方式,block是一块状元素的方式显示，
-
 - inline是以内联元素的方式显示，none是不不显示；
-
 - 块状元素会单独占据一样，其他元素跟他在同一行的会被迫换行，挤到下一行那里去，inline则不会这样。
+
+### 3.CSS选择符
+
+#### 1.类型(元素)选择符
+
+用于选择特定类型的元素，譬如段落：
+
+```css
+p {
+	color: black
+}
+```
+
+#### 2.后代选择符
+
+后代选择符用于选择某个或者某组元素的后代
+
+```css
+blockquote p {
+	padding-left: 2em
+}
+```
+
+> 类型选择符与后代选择符非常适合全面应用基础样式。
+
+Tip:后代选择符会选择一个元素的所有后代，包括该元素的儿子和孙子等。
+
+```css
+  <style>
+    article p {
+      font-weight: bold;
+    }
+  </style>
+  <article>
+    <h1>Hello,monica!</p>
+      <h3>Hello,monica!</h2>
+        <p>Hello,Tom!</p>
+        <p>Hello,monica!</p>
+        <p>Hello,Teddy</p>
+  </article>
+```
+
+#### 3.ID选择符
+
+```css
+	#test {
+		color: black
+	}
+	...
+  <p id="test">
+    I love u.
+  </p>
+```
+
+> Tip: ID只能应用到页面中的一个元素，相当于人的身份证，一个人只能有一个身份证，一个人只能有身份证，每个人的身份证都不一样。
+
+#### 4.类选择符
+
+```css
+  <style>
+    .weight {
+      font-weight: 900;
+    }
+    .size {
+      font-size: 2em;
+    }
+  </style>
+  ...
+  <p class="weight size">
+    Hello,monica!
+  </p>
+```
+
+> Tip:类(class)就像人的名字或代号，一个人可以有多个名字或者代号。即一个元素标签可以绑定多个类。
+
+
 
 ## 三、HTML
 
